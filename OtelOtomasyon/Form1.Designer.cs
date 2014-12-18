@@ -58,7 +58,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.TelefonNo = new System.Windows.Forms.TextBox();
             this.DogumYeri = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Kaydet = new System.Windows.Forms.Button();
+            this.Temizle = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.MusteriGiris.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -101,6 +103,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Temizle);
+            this.groupBox1.Controls.Add(this.Kaydet);
             this.groupBox1.Controls.Add(this.DogumYeri);
             this.groupBox1.Controls.Add(this.TelefonNo);
             this.groupBox1.Controls.Add(this.label11);
@@ -251,7 +255,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.OdaButon);
             this.groupBox2.Controls.Add(this.KalinacakGun);
             this.groupBox2.Controls.Add(this.label10);
@@ -369,12 +373,45 @@
             this.DogumYeri.Size = new System.Drawing.Size(200, 20);
             this.DogumYeri.TabIndex = 14;
             // 
-            // textBox1
+            // comboBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(156, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(87, 20);
-            this.textBox1.TabIndex = 15;
+            this.comboBox1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Oda 1",
+            "Oda 2",
+            "Oda 3",
+            "Oda 4",
+            "Oda 5",
+            "Oda 6",
+            "Oda 7",
+            "Oda 8",
+            "Oda 9",
+            "Oda 10"});
+            this.comboBox1.Location = new System.Drawing.Point(156, 19);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(87, 22);
+            this.comboBox1.TabIndex = 9;
+            // 
+            // Kaydet
+            // 
+            this.Kaydet.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Kaydet.Location = new System.Drawing.Point(669, 312);
+            this.Kaydet.Name = "Kaydet";
+            this.Kaydet.Size = new System.Drawing.Size(75, 50);
+            this.Kaydet.TabIndex = 15;
+            this.Kaydet.Text = "Kaydet";
+            this.Kaydet.UseVisualStyleBackColor = true;
+            // 
+            // Temizle
+            // 
+            this.Temizle.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Temizle.Location = new System.Drawing.Point(565, 312);
+            this.Temizle.Name = "Temizle";
+            this.Temizle.Size = new System.Drawing.Size(75, 50);
+            this.Temizle.TabIndex = 16;
+            this.Temizle.Text = "Temizle";
+            this.Temizle.UseVisualStyleBackColor = true;
             // 
             // AnaForm
             // 
@@ -425,7 +462,9 @@
         private System.Windows.Forms.TextBox TelefonNo;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button OdaButon;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button Temizle;
+        private System.Windows.Forms.Button Kaydet;
 
 
     }
