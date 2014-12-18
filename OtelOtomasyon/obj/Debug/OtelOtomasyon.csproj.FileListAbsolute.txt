@@ -1,0 +1,10 @@
+C:\Users\RemziCeylan\Desktop\Ders\OtelOtomasyon\OtelOtomasyon\bin\Debug\OtelOtomasyon.exe.config
+C:\Users\RemziCeylan\Desktop\Ders\OtelOtomasyon\OtelOtomasyon\bin\Debug\OtelOtomasyon.exe
+C:\Users\RemziCeylan\Desktop\Ders\OtelOtomasyon\OtelOtomasyon\bin\Debug\OtelOtomasyon.pdb
+C:\Users\RemziCeylan\Desktop\Ders\OtelOtomasyon\OtelOtomasyon\obj\Debug\OtelOtomasyon.csprojResolveAssemblyReference.cache
+C:\Users\RemziCeylan\Desktop\Ders\OtelOtomasyon\OtelOtomasyon\obj\Debug\OtelOtomasyon.AnaForm.resources
+C:\Users\RemziCeylan\Desktop\Ders\OtelOtomasyon\OtelOtomasyon\obj\Debug\OtelOtomasyon.Properties.Resources.resources
+C:\Users\RemziCeylan\Desktop\Ders\OtelOtomasyon\OtelOtomasyon\obj\Debug\OtelOtomasyon.csproj.GenerateResource.Cache
+C:\Users\RemziCeylan\Desktop\Ders\OtelOtomasyon\OtelOtomasyon\obj\Debug\OtelOtomasyon.exe
+C:\Users\RemziCeylan\Desktop\Ders\OtelOtomasyon\OtelOtomasyon\obj\Debug\OtelOtomasyon.pdb
+C:\Users\RemziCeylan\Desktop\Ders\OtelOtomasyon\OtelOtomasyon\obj\Debug\OtelOtomasyon.Odalar.resources
