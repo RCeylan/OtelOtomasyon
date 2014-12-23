@@ -32,6 +32,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.MusteriGiris = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Cinsiyet = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.Temizle = new System.Windows.Forms.Button();
             this.Kaydet = new System.Windows.Forms.Button();
@@ -75,7 +76,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.Cinsiyet = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.MusteriGiris.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -134,6 +134,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Bilgileri";
             // 
+            // Cinsiyet
+            // 
+            this.Cinsiyet.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Cinsiyet.FormattingEnabled = true;
+            this.Cinsiyet.Items.AddRange(new object[] {
+            "Bay",
+            "Bayan"});
+            this.Cinsiyet.Location = new System.Drawing.Point(120, 277);
+            this.Cinsiyet.Name = "Cinsiyet";
+            this.Cinsiyet.Size = new System.Drawing.Size(200, 22);
+            this.Cinsiyet.TabIndex = 30;
+            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Arial Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -169,6 +181,7 @@
             // 
             // DogumYeri
             // 
+            this.DogumYeri.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.DogumYeri.Location = new System.Drawing.Point(120, 237);
             this.DogumYeri.Name = "DogumYeri";
             this.DogumYeri.Size = new System.Drawing.Size(200, 20);
@@ -176,6 +189,7 @@
             // 
             // TelefonNo
             // 
+            this.TelefonNo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TelefonNo.Location = new System.Drawing.Point(120, 119);
             this.TelefonNo.Name = "TelefonNo";
             this.TelefonNo.Size = new System.Drawing.Size(200, 20);
@@ -327,6 +341,7 @@
             // 
             // AdSoyad
             // 
+            this.AdSoyad.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AdSoyad.Location = new System.Drawing.Point(120, 77);
             this.AdSoyad.Name = "AdSoyad";
             this.AdSoyad.Size = new System.Drawing.Size(200, 20);
@@ -334,10 +349,12 @@
             // 
             // TCKimlik
             // 
+            this.TCKimlik.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TCKimlik.Location = new System.Drawing.Point(120, 37);
             this.TCKimlik.Name = "TCKimlik";
             this.TCKimlik.Size = new System.Drawing.Size(200, 20);
             this.TCKimlik.TabIndex = 6;
+            this.TCKimlik.TextChanged += new System.EventHandler(this.TCKimlik_TextChanged);
             // 
             // label6
             // 
@@ -522,6 +539,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox1.Location = new System.Drawing.Point(335, 194);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 22);
@@ -539,6 +557,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox2.Location = new System.Drawing.Point(335, 152);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(200, 22);
@@ -546,6 +565,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox3.Location = new System.Drawing.Point(335, 112);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(200, 22);
@@ -577,17 +597,6 @@
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // Cinsiyet
-            // 
-            this.Cinsiyet.FormattingEnabled = true;
-            this.Cinsiyet.Items.AddRange(new object[] {
-            "Bay",
-            "Bayan"});
-            this.Cinsiyet.Location = new System.Drawing.Point(120, 277);
-            this.Cinsiyet.Name = "Cinsiyet";
-            this.Cinsiyet.Size = new System.Drawing.Size(200, 22);
-            this.Cinsiyet.TabIndex = 30;
             // 
             // MusteriİslemleriForm
             // 

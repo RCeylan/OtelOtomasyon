@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ayarlar.cs" />
     <Compile Include="BaslangicSayfa.cs">
       <SubType>Form</SubType>
     </Compile>

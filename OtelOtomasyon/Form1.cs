@@ -78,22 +78,43 @@ namespace OtelOtomasyon
 
         private void Kaydet_Click(object sender, EventArgs e)
         {
-            BaglantiAc();
-            SqlCommand komut = new SqlCommand("Insert Into MusteriBilgileri(TCKimlik, AdSoyad, TelefonNo, MedeniHal, DogumTarihi, DogumYeri, Cinsiyet) values (@TCKimlik, @AdSoyad, @TelefonNo, @MedeniHal, @DogumTarihi, @DogumYeri, @Cinsiyet)", baglanti);
 
-            komut.Parameters.AddWithValue("@TCKimlik", TCKimlik.Text);
-            komut.Parameters.AddWithValue("@AdSoyad", AdSoyad.Text);
-            komut.Parameters.AddWithValue("@TelefonNo", TelefonNo.Text);
-            komut.Parameters.AddWithValue("@MedeniHal", MedeniHal.Text);
-            komut.Parameters.AddWithValue("@DogumTarihi", DogumTarih.Value.ToShortDateString());
-            komut.Parameters.AddWithValue("@DogumYeri", DogumYeri.Text);
-            komut.Parameters.AddWithValue("@Cinsiyet", Cinsiyet.Text);
+            try
+            {
+                BaglantiAc();
+                SqlCommand komut = new SqlCommand("Insert Into MusteriBilgileri(TCKimlik, AdSoyad, TelefonNo, MedeniHal, DogumTarihi, DogumYeri, Cinsiyet) values (@TCKimlik, @AdSoyad, @TelefonNo, @MedeniHal, @DogumTarihi, @DogumYeri, @Cinsiyet)", baglanti);
+                SqlCommand komut2 = new SqlCommand("Insert Into OdaKayitlari(OdaID, GirisTarihi, CikisTarihi) values (@OdaID, @GirisTarihi, @CikisTarihi)", baglanti);
 
+                komut.Parameters.AddWithValue("@TCKimlik", TCKimlik.Text);
+                komut.Parameters.AddWithValue("@AdSoyad", AdSoyad.Text);
+                komut.Parameters.AddWithValue("@TelefonNo", TelefonNo.Text);
+                komut.Parameters.AddWithValue("@MedeniHal", MedeniHal.Text);
+                komut.Parameters.AddWithValue("@DogumTarihi", DogumTarih.Value);
+                komut.Parameters.AddWithValue("@DogumYeri", DogumYeri.Text);
+                komut.Parameters.AddWithValue("@Cinsiyet", Cinsiyet.Text);
 
-            komut.ExecuteNonQuery();
-            BaglantiKapat();
+                komut2.Parameters.AddWithValue("@OdaID", MusteriGirisOdaSec.Text);
+                komut2.Parameters.AddWithValue("@GirisTarihi", GirisTarih.Value);
+                komut2.Parameters.AddWithValue("@CikisTarihi", CikisTarih.Value);
+              
 
-            MessageBox.Show("Kayıt Başarılı!");
+                komut.ExecuteNonQuery();
+                komut2.ExecuteNonQuery();
+                BaglantiKapat();
+
+                MessageBox.Show("Kayıt Başarılı!");
+            }
+            catch (SqlException hata)
+            {
+                MessageBox.Show(hata.Message);
+                throw;
+            }
+            
+        }
+
+        private void TCKimlik_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
